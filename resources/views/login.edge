@@ -1,0 +1,7 @@
+@if(flashMessage('notification'))
+  <div class="notification is-{{ flashMessage('notification.type') }}">
+    {{ flashMessage('notification.message') }}
+  </div>
+@else
+  <h2>No flash messsage</h2>
+@endif
